@@ -1,0 +1,1 @@
+JavaScript allplication on calculator, max-min and factorial

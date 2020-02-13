@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<!-- bootstrap file -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+		<!-- <script type="text/javascript">
+			var A;
+			var B;
+			var SUM;
+			A = Number(window.prompt('Enter value of A'));
+			B = Number(window.prompt('Enter value of B'));
+			SUM = A + B;
+			alert(SUM);
+		</script> -->
+		<script>
+			var res;
+			function result(){
+				if(document.getElementById("add").selected){
+
+					a = Number(document.getElementById("fnum").value);
+					b = Number(document.getElementById("snum").value);
+					res =  a + b ;
+					// document.getElementById("answer").value = res;
+					alert(res);
+				}
+
+				if(document.getElementById("sub").selected){
+
+					a = Number(document.getElementById("fnum").value);
+					b = Number(document.getElementById("snum").value);
+					res =  a - b ;
+					// document.getElementById("answer").value = res;
+					alert(res);
+				}
+
+				if(document.getElementById("mul").selected){
+
+					a = Number(document.getElementById("fnum").value);
+					b = Number(document.getElementById("snum").value);
+					res =  a * b ;
+					// document.getElementById("answer").value = res;
+					alert(res);
+				}
+
+				if(document.getElementById("div").selected){
+
+					a = Number(document.getElementById("fnum").value);
+					b = Number(document.getElementById("snum").value);
+					res =  a / b ;
+					// document.getElementById("answer").value = res;
+					alert(res);
+				}
+
+				if(document.getElementById("mod").selected){
+
+					a = Number(document.getElementById("fnum").value);
+					b = Number(document.getElementById("snum").value);
+					res =  a % b ;
+					// document.getElementById("answer").value = res;
+					alert(res);
+				}	
+			}
+
+
+			
+			// function add(){
+			// var a,b,c;
+			// a=Number(document.getElementById("first").value);
+			// b=Number(document.getElementById("second").value);
+			// c= a + b;
+			// document.getElementById("answer").value= c;
+			// }
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<form>
+			  <div class="form-row align-items-center">
+			    <div class="col-sm-3 my-1">
+			      <label class="sr-only" for="inlineFormInputName">First Number</label>
+			      <input type="text" class="form-control" id="fnum" placeholder="First Number">
+			    </div>
+
+			    <div class="col-auto my-1">
+			      <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+			      <select class="custom-select mr-sm-2" id="operator">
+			        <option selected>Choose...</option>
+			        <option id="add" value="1">+</option>
+			        <option id="sub" value="2">-</option>
+			        <option id="mul" value="3">*</option>
+			        <option id="div" value="3">/</option>
+			        <option id="mod" value="3">%</option>
+			      </select>
+			    </div>
+			    
+			    <div class="col-sm-3 my-1">
+			      <label class="sr-only" for="inlineFormInputGroupUsername">Second Number</label>
+			      <input type="text" class="form-control" id="snum" placeholder="Second Number">
+			    </div>
+			    <div class="col-auto my-1">
+			      <button type="submit" class="btn btn-primary" onclick="result()">Calculate</button>
+			      <!-- <input id="answer"> -->
+			    </div>
+			  </div>
+			</form>
+		</div>
+
+
+		<!-- javascript files -->
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	</body>
+</html>
