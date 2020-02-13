@@ -1,0 +1,41 @@
+.main_div{
+  width: 60%;
+  margin: 0 20%;
+  border: 10px solid grey;
+}
+div{
+  padding: 0px 10px;
+}
+.header table{
+  width: 100%;
+}
+profile_pic{
+  align: right;
+}
+tr td{
+  /* border: 1px solid red; */
+  width: 50%;
+}
+#profile_pic{
+  width: 150px;
+  padding: 15px 0px 0px 0px;
+  /* margin: 10px 10px 0px 0px; */
+}
+.body{
+  border: 1px solid black;
+}
+.heading{
+  background-color: lightblue;
+}
+.education{
+  border: 1px solid black;
+  text-align: center;
+}
+.education td{
+  border: 1px solid grey;
+  width: 20%;
+}
+#sign{
+  margin-right: 60px;
+  text-align: right;
+}
